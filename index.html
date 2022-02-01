@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript User Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <article>
+            <form name="formOne" method="post">
+                <div class="form-group">
+                    <label class="label-name">Name</label>
+                    <input id="name" type="text" name="name">
+                    <span id="error_name"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label class="label-name">Lastname</label>
+                    <input id="lastname" type="text" name="lastname">
+                    <span id="error_lastname"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label class="label-name">Date of birth</label>
+                    <input id="age" type="date" name="age">
+                    <span id="error_age"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label class="label-name">Email</label>
+                    <input type="email" name="email" id="email">
+                    <span id="error_email"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label class="label-name">Gender</label>
+                    Male <input type="radio" name="gender" id="male" value="Male">
+                    Female <input type="radio" name="gender" id="female" value="Female">
+                    <span id="error_gender"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label class="label-name">Course</label>
+                    <select name="course" id="course">
+                        <option value=""></option>
+                        <option value="HTML&CSS">HTML&CSS</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="PHP&MySQL">PHP&MySQL</option>
+                        <option value="Wordrpess">Wordrpess</option>
+                    </select>
+                    <span id="error_course"></span>
+                </div>
+        
+                <div id="courses_question" class="form-group">
+                    <label class="label-name">Have you attended any of the courses at the center</label>
+                    <label>YES <input type="checkbox" name="ckbox[]" value="Yes"></label>
+                    <label>NO <input type="checkbox" name="ckbox[]" value="No"></label>
+                    <span id="error_question"></span>
+                </div>
+        
+                <input type="button" name="send" id="send" value="Send" onclick="validate_data()">
+                <input type="reset" value="Reset" name="Reset">
+            </form>
+                
+            <h2>Print form</h2>
+            <p class="name"></p>
+            <p class="lastname"></p>
+            <p class="age"></p>
+            <p class="email"></p>
+            <p class="gender"></p>
+            <p class="course"></p>
+            <p class="question"></p>
+            </form>
+        </article>
+        <script src="js/script.js"></script>
+    </body>
+</html>
