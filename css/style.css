@@ -1,0 +1,33 @@
+body, input{
+	font-family: Arial;
+}
+/* article{
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+} */
+#error, .errors{
+	color: red;
+}
+input, select{
+	padding: 5px 10px;
+	border: 1px solid #a7a7a7;
+}
+
+.form-group{
+	margin-bottom: 20px;
+}
+.label-name{
+	width: 180px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.errors span{
+	display: block;
+}
+#error_name, #error_lastname, #error_email, #error_age, #error_gender, #error_course, #error_question{
+	display: block;
+	margin-left: 194px;
+	font-size: 12px;
+	color: red;
+}
